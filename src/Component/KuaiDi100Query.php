@@ -33,9 +33,9 @@ class KuaiDi100Query implements ExpressQueryInterface
         $curl->setReferrer($referer);
         $curl->post($url);
         if ($curl->error) {
-            $response = $curl->error_code;
+            $response = array('errno'=>$curl->error_code, 'message'=>$curl->error_message);
         } else {
-            $response = $curl->response;
+            $response = array('errno'=>0, 'data'=>json_decode($curl->response));
         }
         $curl->close();
         return $response;
