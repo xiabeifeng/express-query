@@ -1,14 +1,14 @@
 {
     "name": "xiabeifeng/express-query",
     "description": "Make it easy to query express information",
-    "keywords": ["kuaidi", "express"],
+    "keywords": ["kuaidi", "kuaidi100", "express", "express-query", "express information"],
     "license": "MIT",
     "authors": [
-    	{
-    		"name": "xiabeifeng",
-    		"email": "840679824@qq.com",
-    		"homepage": "https://github.com/xiabeifeng"
-    	}
+        {
+            "name": "xiabeifeng",
+            "email": "840679824@qq.com",
+            "homepage": "https://github.com/xiabeifeng"
+        }
     ],
     "require": {
     	"php": ">=5.3.0"
