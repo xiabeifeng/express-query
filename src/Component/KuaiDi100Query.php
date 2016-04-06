@@ -4,7 +4,7 @@ namespace Component;
 
 use Component\ExpressQueryInterface;
 
-class ExpressQuery implements ExpressQueryInterface
+class KuaiDi100Query implements ExpressQueryInterface
 {
 
     public function query()
