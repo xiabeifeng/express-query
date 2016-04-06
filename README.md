@@ -7,7 +7,7 @@ This project is to make it easy to query express information.
 ```php
 
 $obj = new Component\KuaiDi100Query('yunda', '1201869669591');
-$result = $obj->query();    // return error message or json string data
+$result = $obj->query();
 var_dump($result);
 ```
 
