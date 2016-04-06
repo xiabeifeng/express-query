@@ -1,7 +1,7 @@
 {
     "name": "xiabeifeng/express-query",
     "description": "Make it easy to query express information",
-	"keywords": ["kuaidi", "express query", "express"],
+	"keywords": ["kuaidi", "express"],
     "license": "MIT",
 	"authors": [
 		{
