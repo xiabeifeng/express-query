@@ -1,7 +1,7 @@
 <?php
-namespace Xiabeifeng\Component;
+namespace Component;
 
-use Xiabeifeng\Component\ExpressQueryInterface;
+use Component\ExpressQueryInterface;
 
 class ExpressQuery implements ExpressQueryInterface
 {

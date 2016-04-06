@@ -1,5 +1,5 @@
 <?php
-namespace Xiabeifeng\Component;
+namespace Component;
 
 interface ExpressQueryInterface
 {
