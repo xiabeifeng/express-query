@@ -5,8 +5,9 @@ use Xiabeifeng\Component\ExpressQueryInterface;
 
 class ExpressQuery implements ExpressQueryInterface
 {
+
     public function query()
     {
-        // TODO        
+        // TODO
     }
 }
