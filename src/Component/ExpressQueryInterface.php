@@ -5,6 +5,6 @@ namespace Component;
 interface ExpressQueryInterface
 {
 
-    public function query(){}
+    public function query();
 
 }
