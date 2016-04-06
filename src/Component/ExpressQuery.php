@@ -1,4 +1,5 @@
 <?php
+
 namespace Component;
 
 use Component\ExpressQueryInterface;
