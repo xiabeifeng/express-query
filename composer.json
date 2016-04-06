@@ -1,6 +1,7 @@
 {
     "name": "xiabeifeng/express-query",
     "description": "Make it easy to query express information",
+    "license": "MIT",
     "require": {
         "php": ">=5.3.0"
     }
