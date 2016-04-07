@@ -39,7 +39,7 @@ class KuaiDi100Query implements ExpressQueryInterface
             if ($data->status == 200) {
                 $response = array('errno'=>0, 'data'=>json_decode($curl->response));                
             } else {
-                throw new KuaiDiQueryException($data->message, $data->status);
+                throw new ExpressQueryException($data->message, $data->status);
             }
         }
         $curl->close();
