@@ -15,8 +15,8 @@
     	"curl/curl": "1.3.0"
     },
     "autoload": {
-        "psr-0": {
-            "Component": "src/"
+        "psr-4": {
+            "Xiabeifeng\\ExpressQuery": "src/"
         }
     }
 }
