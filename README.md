@@ -1,6 +1,8 @@
 # express-query
 
-This project is to make it easy to query express information.
+> This is a php package to make it easy to query express information.
+
+> Homepage : https://packagist.org/packages/xiabeifeng/express-query
 
 ### Quick Start and Examples
 
