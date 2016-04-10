@@ -7,8 +7,9 @@
 ### Quick Start and Examples
 
 ```php
+require 'vendor/autoload.php';
 try {
-    $obj = new KuaiDi100('yunda', '1201869669591');
+    $obj = new Xiabeifeng\ExpressQuery\KuaiDi100('yunda', '1201869669591');
     $result = $obj->query();
     var_dump($result);
 } catch (\Exception $e) {
