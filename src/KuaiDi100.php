@@ -1,11 +1,8 @@
 <?php
 
-namespace Component;
+namespace Xiabeifeng\ExpressQuery;
 
-use Component\ExpressQueryInterface;
-use Curl\Curl;
-
-class KuaiDi100Query implements ExpressQueryInterface
+class KuaiDi100 implements ExpressQueryInterface
 {
     protected $type;                // express type
     protected $postId;              // express number
@@ -28,7 +25,7 @@ class KuaiDi100Query implements ExpressQueryInterface
         $url .= '&temp=' . $this->temp;
         $referer = 'http://m.kuaidi100.com/index_all.html';
 
-        $curl = new Curl();
+        $curl = new Curl\Curl();
         $curl->setUserAgent($_SERVER['HTTP_USER_AGENT']);
         $curl->setReferrer($referer);
         $curl->post($url);
@@ -39,7 +36,7 @@ class KuaiDi100Query implements ExpressQueryInterface
             if ($data->status == 200) {
                 $response = array('errno'=>0, 'data'=>$data);                
             } else {
-                throw new ExpressQueryException($data->message, $data->status);
+                throw new \Exception($data->message, $data->status);
             }
         }
         $curl->close();
