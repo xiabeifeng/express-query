@@ -25,7 +25,7 @@ class KuaiDi100 implements ExpressQueryInterface
         $url .= '&temp=' . $this->temp;
         $referer = 'http://m.kuaidi100.com/index_all.html';
 
-        $curl = new Curl\Curl();
+        $curl = new \Curl\Curl();
         $curl->setUserAgent($_SERVER['HTTP_USER_AGENT']);
         $curl->setReferrer($referer);
         $curl->post($url);
