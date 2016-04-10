@@ -28,6 +28,7 @@ class KuaiDi100 implements ExpressQueryInterface
         $curl = new \Curl\Curl();
         $curl->setUserAgent($_SERVER['HTTP_USER_AGENT']);
         $curl->setReferrer($referer);
+        $curl->setOpt(CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
         $curl->post($url);
         if ($curl->error) {
             $response = array('errno'=>$curl->error_code, 'message'=>$curl->error_message);
