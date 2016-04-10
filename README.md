@@ -8,10 +8,10 @@
 
 ```php
 try {
-    $obj = new KuaiDi100Query('yunda', '1201869669591');
+    $obj = new KuaiDi100('yunda', '1201869669591');
     $result = $obj->query();
     var_dump($result);
-} catch (Component\ExpressQueryException $e) {
+} catch (\Exception $e) {
     echo $e->getMessage() . PHP_EOL;
     echo $e->getCode() . PHP_EOL;
 }
